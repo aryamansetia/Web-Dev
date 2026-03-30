@@ -1,0 +1,156 @@
+.app-shell {
+  min-height: 100vh;
+  padding: 2.5rem 1rem;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(32, 201, 151, 0.2) 0%, transparent 42%),
+    radial-gradient(circle at 90% 85%, rgba(255, 159, 67, 0.24) 0%, transparent 45%),
+    linear-gradient(160deg, #f4fbf8 0%, #eef5fb 100%);
+}
+
+.card-section {
+  width: min(960px, 100%);
+}
+
+.card-section__title {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 2.35rem);
+  letter-spacing: 0.02em;
+  color: #12343b;
+}
+
+.card-section__subtitle {
+  margin: 0.6rem 0 1.5rem;
+  color: #486574;
+  font-size: 1rem;
+}
+
+.student-form {
+  margin-bottom: 1.2rem;
+  padding: 1rem;
+  border: 1px solid #d5e5ea;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 8px 20px rgba(21, 54, 70, 0.08);
+}
+
+.student-form__title {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #153743;
+}
+
+.student-form__subtitle {
+  margin: 0.35rem 0 0.9rem;
+  color: #466371;
+  font-size: 0.95rem;
+}
+
+.student-form__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.8rem;
+}
+
+.student-form__field {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.student-form__field span {
+  font-size: 0.88rem;
+  color: #2c4b57;
+  font-weight: 700;
+}
+
+.student-form__field input {
+  border: 1px solid #c7d9df;
+  border-radius: 10px;
+  padding: 0.58rem 0.65rem;
+  font-size: 0.95rem;
+  background-color: #ffffff;
+  color: #1f2933;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.student-form__field input:focus {
+  border-color: #1f8d8c;
+  box-shadow: 0 0 0 3px rgba(31, 141, 140, 0.18);
+}
+
+.student-form__error {
+  margin: 0.8rem 0 0;
+  color: #9b2431;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.student-form__button {
+  margin-top: 0.9rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+  background: linear-gradient(140deg, #167c80 0%, #0f676f 100%);
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.student-form__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(15, 103, 111, 0.3);
+}
+
+.student-form__actions {
+  margin-top: 0.9rem;
+  display: flex;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.student-form__actions .student-form__button {
+  margin-top: 0;
+}
+
+.student-form__button--secondary {
+  background: #e7eef2;
+  color: #1f3e4a;
+}
+
+.student-form__button--secondary:hover {
+  box-shadow: 0 8px 16px rgba(70, 99, 113, 0.22);
+}
+
+.card-grid {
+  display: grid;
+  gap: 1.15rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    padding: 1.4rem 0.9rem;
+  }
+
+  .card-section__subtitle {
+    margin-bottom: 1rem;
+  }
+
+  .student-form {
+    padding: 0.85rem;
+  }
+
+  .student-form__button {
+    width: 100%;
+  }
+
+  .student-form__actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
