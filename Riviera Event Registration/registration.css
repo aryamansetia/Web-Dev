@@ -1,0 +1,135 @@
+:root {
+    --primary: #0a2540;
+    --accent: #00c2ff;
+    --dark: #06192d;
+    --light: #f4f8fb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, var(--primary), var(--dark));
+    min-height: 100vh;
+    color: white;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header h1 {
+    font-size: 2.8rem;
+    color: var(--accent);
+    letter-spacing: 2px;
+}
+
+.header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* REGISTRATION SECTION */
+.registration-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.form-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    animation: fadeUp 1.2s ease;
+}
+
+.form-card h2 {
+    text-align: center;
+    color: var(--accent);
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.form-card p {
+    text-align: center;
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* INPUTS */
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 0.95rem;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    box-shadow: 0 0 0 2px var(--accent);
+}
+
+/* BUTTON */
+.register-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background: var(--accent);
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--dark);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.register-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0,194,255,0.4);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

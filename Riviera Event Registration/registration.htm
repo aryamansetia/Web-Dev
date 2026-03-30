@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RIVERA 2026 | Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>RIVERA 2026</h1>
+    <p>College Fest Registration</p>
+</header>
+
+<section class="registration-section">
+    <div class="form-card">
+        <h2>Register Now</h2>
+        <p>Be a part of the most exciting college fest of the year</p>
+
+        <!-- FORM -->
+        <form action="finalsubmit.htm" method="post">
+            
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="input-group">
+                <label>College Name</label>
+                <input type="text" placeholder="Enter your college name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Select Day</label>
+                <select required>
+                    <option value="">-- Choose a Day --</option>
+                    <option>Day 1 – 20 Feb 2025</option>
+                    <option>Day 2 – 21 Feb 2025</option>
+                    <option>Day 3 – 22 Feb 2025</option>
+                    <option>Day 4 – 23 Feb 2025</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Event Interest</label>
+                <select required>
+                    <option value="">-- Select Event Type --</option>
+                    <option>Cultural Events</option>
+                    <option>Technical Events</option>
+                    <option>Workshops</option>
+                    <option>Music & Dance</option>
+                </select>
+            </div>
+
+            <!-- FIXED BUTTON -->
+            <button type="submit" class="register-btn">
+                Submit Registration
+            </button>
+
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 RIVERA College Fest | Designed with ❤️</p>
+</footer>
+
+</body>
+</html>
